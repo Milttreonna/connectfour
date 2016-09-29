@@ -1,3 +1,8 @@
+* {
+  /*border-width: thin;
+  border-color: rgb(255, 255, 255);
+  border-style: dashed;*/
+}
 body {
     background-color: #8ca3a3;
 }
