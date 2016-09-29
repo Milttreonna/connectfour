@@ -8,6 +8,12 @@ body {
 }
 h1 {font-family: "Trebuchet MS", Helvetica, sans-serif;
     color: #563f46;
+    border-style:  solid;
+    border-width: 7px;
+    background-color: #c6bcb6;
+    border-color: #96897f;
+
+
 }
 p {font-family: "Trebuchet MS", Helvetica, sans-serif;
     color: #563f46;
