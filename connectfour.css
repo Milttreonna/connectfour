@@ -4,11 +4,11 @@
   border-style: dashed;*/
 }
 body {
-    background-color: #8ca3a3;
+    font-family: "Trebuchet MS", Helvetica, sans-serif;background-color: #8ca3a3;
 }
-h1 {
+h1 {font-family: "Trebuchet MS", Helvetica, sans-serif;
     color: #563f46;
 }
-p {
+p {font-family: "Trebuchet MS", Helvetica, sans-serif;
     color: #563f46;
 }
