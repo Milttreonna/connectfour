@@ -1,7 +1,7 @@
 * {
-  /*border-width: thin;
+  border-width: thin;
   border-color: rgb(255, 255, 255);
-  border-style: solid;*/
+  border-style: solid;
 }
 body {
     font-family: "Trebuchet MS", Helvetica, sans-serif;
@@ -39,4 +39,22 @@ p {
   border-width: thick;
   border-color: blue;
   border-style: solid;
+}
+.player {
+  font-family: "Trebuchet MS", Helvetica, sans-serif;
+    border-style:  solid;
+    border-width: thin;
+    background-color: #ffffff;
+}
+#red {
+  color: red;
+  border-color: red;
+  font-size: 150%;
+}
+#blue {
+  color: rgb(0, 3, 255);
+  border-color: rgb(0, 3, 255);
+  font-size: 150%;
+}
+#spanbottom {
 }
