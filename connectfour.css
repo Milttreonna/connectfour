@@ -5,15 +5,15 @@
 }
 body {
     font-family: "Trebuchet MS", Helvetica, sans-serif;
-    background-color: #8ca3a3;
+    background-color: #96ceb4;
 }
 h1 {
   font-family: "Trebuchet MS", Helvetica, sans-serif;
-    color: #563f46;
+    color: #ff6f69;
     border-style:  solid;
     border-width: 7px;
-    background-color: #c6bcb6;
-    border-color: #96897f;
+    background-color: #ffeead;
+    border-color: #ff6f69;
 }
 p {
   font-family: "Trebuchet MS", Helvetica, sans-serif;
@@ -27,4 +27,7 @@ p {
 .tdwidth {
 }
 .imgwidth {
+  border-width: thick;
+  border-color: #ff6f69;
+  border-style: solid;
 }
