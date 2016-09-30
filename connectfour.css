@@ -5,28 +5,38 @@
 }
 body {
     font-family: "Trebuchet MS", Helvetica, sans-serif;
-    background-color: #b2b2b2;
+    background-color: #8ca3a3;
 }
 h1 {
   font-family: "Trebuchet MS", Helvetica, sans-serif;
-    color: #ff6f69;
+    color: #563f46;
     border-style:  solid;
     border-width: 7px;
-    background-color: #ffeead;
-    border-color: #ff6f69;
+    background-color: #c6bcb6;
+    border-color: #96897f;
 }
 p {
   font-family: "Trebuchet MS", Helvetica, sans-serif;
-}
-#tablecenter {
-  margin-top: 5%;
+  color: #563f46;
 }
 #tablein {
   width: 100%;
+  border-width: thin;
+  border-color: blue;
+  border-style: solid;
 }
 .rowwidth {
+  border-width: thick;
+  border-color: blue;
+  border-style: solid;
 }
 .tdwidth {
+  border-width: thick;;
+  border-color: blue;
+  border-style: solid;
 }
 .imgwidth {
+  border-width: thick;
+  border-color: blue;
+  border-style: solid;
 }
