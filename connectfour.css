@@ -1,7 +1,7 @@
 * {
-  border-width: thin;
+  /*border-width: thin;
   border-color: rgb(255, 255, 255);
-  border-style: solid;
+  border-style: solid;*/
 }
 body {
     font-family: "Trebuchet MS", Helvetica, sans-serif;
@@ -47,4 +47,7 @@ p {
   font-size: 150%;
 }
 #spanbottom {
+}
+#top {
+  margin-top: 2%;
 }
