@@ -20,10 +20,10 @@ var game = {
      // column_i = "blue";
     var td_to_change = document.getElementsByTagName('tr')[???].getElementsByTagName("td")[column_i];
     if (whose_turn = P1) {
-      td_to_change.src = "img/red.png";
+      td_to_change.getElementsByTagName('img').src = "img/red.png";
       whose_turn = P2;
     } else {
-      td_to_change.src = "img/blue.png";
+      td_to_change.getElementsByTagName('img').src = "img/blue.png";
       whose_turn = P1;
     }
   }
