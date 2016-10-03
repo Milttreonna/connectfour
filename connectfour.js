@@ -1,4 +1,3 @@
-// onclick: if all spaces in column are taken: do nothing.
 // if click creates 4 in a row, player wins
 
 var game = {
@@ -12,19 +11,6 @@ var game = {
             [null, null, null, null, null, null]],
 
   drop: function (column_i) {
-    var count = 0;
-    for (var i = 0; i < this.columns.length; i++) {
-      for (var j = 0; j < this.columns[i].length; j++) {
-        if (this.columns[i][j] !== null) {
-          count += 1;
-        }
-      }
-    }
-    console.log(count);
-    if (count === 42) {
-      document.getElementById('name').innerText = "Game Over";
-      return 0;
-    }
     var lowest = this.columns[column_i].indexOf(null);
     if (this.whose_turn === "P1") {
       this.columns[column_i][lowest] = "red";
@@ -38,6 +24,19 @@ var game = {
     } else {
       td_to_change.src = "img/blue.png";
       this.whose_turn = "P1";
+    }
+    var count = 0;
+    for (var i = 0; i < this.columns.length; i++) {
+      for (var j = 0; j < this.columns[i].length; j++) {
+        if (this.columns[i][j] !== null) {
+          count += 1;
+        }
+      }
+    }
+    console.log(count);
+    if (count === 42) {
+      document.getElementById('name').innerText = "Game Over";
+      return 0;
     }
   }
 }
