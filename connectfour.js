@@ -43,4 +43,5 @@ var game = {
     }
   }
 }
+// make player icon hidden when turn is over
 
