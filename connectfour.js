@@ -31,6 +31,16 @@ var game = {
         }
       }
     }
+    if (verti) || (hori) || (left up dia) || (right up dia) || (left down dia) || (right down dia) {
+      if (this.whose_turn === 'P2') {
+        document.getElementById('name').innerText = "Player 1 Wins!";
+        return 0;
+      }
+      else {
+        document.getElementById('name').innerText = "Player 2 Wins!";
+        return 0;
+      }
+    }
     // check for 4 in a row here
     console.log(count);
     if (count === 42) {
