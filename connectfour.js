@@ -1,5 +1,3 @@
-// if click creates 4 in a row, player wins
-
 var game = {
   whose_turn: "P1",
   columns: [[null, null, null, null, null, null],
@@ -33,6 +31,7 @@ var game = {
         }
       }
     }
+    // check for 4 in a row here
     console.log(count);
     if (count === 42) {
       document.getElementById('name').innerText = "Game Over";
