@@ -31,17 +31,19 @@ var game = {
         }
       }
     }
-    if (verti) || (hori) || (left up dia) || (right up dia) || (left down dia) || (right down dia) {
+    if (this.verti(column_i, lowest) || this.hori(column_i, lowest) ||
+    this.left_dia(column_i, lowest) || this.right_dia(column_i, lowest)) {
       if (this.whose_turn === 'P2') {
         document.getElementById('name').innerText = "Player 1 Wins!";
+        $('.bn').remove()
         return 0;
       }
       else {
         document.getElementById('name').innerText = "Player 2 Wins!";
+        $('.bn').remove()
         return 0;
       }
     }
-    // check for 4 in a row here
     console.log(count);
     if (count === 42) {
       document.getElementById('name').innerText = "Game Over";
@@ -55,5 +57,40 @@ var game = {
       $('#red').css('visibility', 'visible');
       $('#blue').css('visibility', 'hidden');
     }
+  },
+  verti: function (column_i, lowest) {
+    x = this.columns;
+    return ((x[column_i][lowest] === x[column_i][lowest - 1]) &&
+            (x[column_i][lowest - 1] === x[column_i][lowest - 2]) &&
+            (x[column_i][lowest - 2] === x[column_i][lowest - 3]));
+  },
+  hori: function (column_i, lowest) {
+    x = this.columns;
+    for (var i = Math.max(column_i - 3, 0); (i + 3) < Math.min(7, column_i + 4) ; i++) {
+      if ((x[i][lowest] === x[i + 1][lowest]) && (x[i][lowest] === x[i + 2][lowest])
+      && (x[i][lowest] === x[i + 3][lowest])) {
+        return true;
+      }
+    }
+    return false;
+  },
+  left_dia: function (column_i, lowest) {
+    return (false);
+  },
+  right_dia: function (column_i, lowest) {
+    return (false);
   }
+
 }
+// return (((x[column_i][lowest] === x[column_i - 1][lowest]) &&
+//          (x[column_i][lowest] === x[column_i - 2][lowest]) &&
+//          (x[column_i][lowest] === x[column_i - 3][lowest])) ||
+//          ((x[column_i][lowest] === x[column_i - 1][lowest]) &&
+//           (x[column_i][lowest] === x[column_i - 2][lowest]) &&
+//           (x[column_i][lowest] === x[column_i + 1][lowest])) ||
+//         ((x[column_i][lowest] === x[column_i - 1][lowest]) &&
+//          (x[column_i][lowest] === x[column_i + 2][lowest]) &&
+//          (x[column_i][lowest] === x[column_i + 1][lowest])) ||
+//        ((x[column_i][lowest] === x[column_i + 1][lowest]) &&
+//         (x[column_i][lowest] === x[column_i + 2][lowest]) &&
+//         (x[column_i][lowest] === x[column_i + 3][lowest])));
