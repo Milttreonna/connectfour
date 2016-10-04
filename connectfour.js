@@ -80,17 +80,3 @@ var game = {
   right_dia: function (column_i, lowest) {
     return (false);
   }
-
-}
-// return (((x[column_i][lowest] === x[column_i - 1][lowest]) &&
-//          (x[column_i][lowest] === x[column_i - 2][lowest]) &&
-//          (x[column_i][lowest] === x[column_i - 3][lowest])) ||
-//          ((x[column_i][lowest] === x[column_i - 1][lowest]) &&
-//           (x[column_i][lowest] === x[column_i - 2][lowest]) &&
-//           (x[column_i][lowest] === x[column_i + 1][lowest])) ||
-//         ((x[column_i][lowest] === x[column_i - 1][lowest]) &&
-//          (x[column_i][lowest] === x[column_i + 2][lowest]) &&
-//          (x[column_i][lowest] === x[column_i + 1][lowest])) ||
-//        ((x[column_i][lowest] === x[column_i + 1][lowest]) &&
-//         (x[column_i][lowest] === x[column_i + 2][lowest]) &&
-//         (x[column_i][lowest] === x[column_i + 3][lowest])));
