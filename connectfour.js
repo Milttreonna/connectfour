@@ -38,7 +38,13 @@ var game = {
       document.getElementById('name').innerText = "Game Over";
       return 0;
     }
+    if (this.whose_turn === 'P2') {
+      $('#red').css('visibility', 'hidden');
+      $('#blue').css('visibility', 'visible');
+    }
+    else {
+      $('#red').css('visibility', 'visible');
+      $('#blue').css('visibility', 'hidden');
+    }
   }
 }
-// make player icon hidden when turn is over
-

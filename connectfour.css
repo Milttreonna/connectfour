@@ -31,20 +31,23 @@ p {
 .imgwidth {
 }
 .player {
-  font-family: "Trebuchet MS", Helvetica, sans-serif;
-    border-style:  solid;
+    font-family: "Trebuchet MS", Helvetica, sans-serif;
+    border-style: solid;
     border-width: thin;
     background-color: #ffffff;
+    padding: 5px;
 }
 #red {
   color: red;
   border-color: red;
   font-size: 150%;
+  visibility: visible;
 }
 #blue {
   color: rgb(0, 3, 255);
   border-color: rgb(0, 3, 255);
   font-size: 150%;
+  visibility: hidden;
 }
 #spanbottom {
 }
