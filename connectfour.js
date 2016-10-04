@@ -80,3 +80,5 @@ var game = {
   right_dia: function (column_i, lowest) {
     return (false);
   }
+
+}
