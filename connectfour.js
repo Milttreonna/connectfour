@@ -78,7 +78,8 @@ var game = {
     x = this.columns;
     for (i) {
       for (j) {
-        if () {
+        if ((x[][] === x[][]) && (x[][] === x[][])
+        && (x[][] === x[][])) {
           return true;
         }
       }
@@ -89,7 +90,8 @@ var game = {
     x = this.columns;
     for (i) {
       for (j) {
-        if () {
+        if ((x[][] === x[][]) && (x[][] === x[][])
+        && (x[][] === x[][])) {
           return true;
         }
       }
