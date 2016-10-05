@@ -98,5 +98,4 @@ var game = {
     }
     return false;
   }
-
 }
