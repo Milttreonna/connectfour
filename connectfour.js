@@ -76,10 +76,10 @@ var game = {
   },
   left_dia: function (column_i, lowest) {
     x = this.columns;
-    for (i) {
-      for (j) {
-        if ((x[][] === x[][]) && (x[][] === x[][])
-        && (x[][] === x[][])) {
+    for (var i = 3; i < 7; i++) {
+      for (var j = 0; j < 3; j++) {
+        if ((x[i][j] === x[i - 1][j + 1]) && (x[i][j] === x[i - 2][j + 2])
+        && (x[i][j] === x[i - 3][j + 3]) && x[i][j]) {
           return true;
         }
       }
@@ -88,10 +88,10 @@ var game = {
   },
   right_dia: function (column_i, lowest) {
     x = this.columns;
-    for (i) {
-      for (j) {
-        if ((x[][] === x[][]) && (x[][] === x[][])
-        && (x[][] === x[][])) {
+    for (var i = 0; i < 4; i++) {
+      for (var j = 0; j < 3; j++) {
+        if ((x[i][j] === x[i + 1][j + 1]) && (x[i][j] === x[i + 2][j + 2])
+        && (x[i][j] === x[i + 3][j + 3]) && x[i][j]) {
           return true;
         }
       }
