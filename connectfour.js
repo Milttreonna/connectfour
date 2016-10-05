@@ -76,22 +76,24 @@ var game = {
   },
   left_dia: function (column_i, lowest) {
     x = this.columns;
-    // for (var i = Math.max(column_i - 3, 0); (i + 3) < Math.min(7, column_i + 4) ; i++) {
-    //   if ((x[i][lowest] === x[i - 1][lowest - 1]) && (x[i][lowest] === x[i - 2][lowest - 2])
-    //   && (x[i][lowest] === x[i - 3][lowest - 3])) {
-    //     return true;
-    //   }
-    // }
+    for (i) {
+      for (j) {
+        if () {
+          return true;
+        }
+      }
+    }
     return false;
   },
   right_dia: function (column_i, lowest) {
     x = this.columns;
-    // for (var i = Math.max(column_i - 3, 0); (i + 3) < Math.min(7, column_i + 4) ; i++) {
-    //   if ((x[i][lowest] === x[i + 1][lowest + 1]) && (x[i][lowest] === x[i + 2][lowest + 2])
-    //   && (x[i][lowest] === x[i + 3][lowest + 3])) {
-    //     return true;
-    //   }
-    // }
+    for (i) {
+      for (j) {
+        if () {
+          return true;
+        }
+      }
+    }
     return false;
   }
 
