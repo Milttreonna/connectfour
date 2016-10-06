@@ -24,7 +24,7 @@ p {
     font-family: "Trebuchet MS", Helvetica, sans-serif;
     border-style: solid;
     border-width: thin;
-    background-color: #ffffff;
+    background-color: black;
     padding: 5px;
 }
 #red {
@@ -44,4 +44,12 @@ p {
 }
 .gray {
   background-color: #b9b8b7;
+  border-style: solid;
+  border-color: white;
+  border-width: thin;
+}
+.bn {
+  border-style: solid;
+  border-color: black;
+  border-width: thin;
 }
