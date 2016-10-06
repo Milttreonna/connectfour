@@ -17,10 +17,10 @@ var game = {
     }
     var td_to_change = document.getElementsByClassName('connect4_row')[this.columns[column_i].length -1 - lowest].getElementsByTagName("img")[column_i];
     if (this.whose_turn === "P1") {
-      td_to_change.src = "img/earth.jpg";
+      td_to_change.src = "img/earth.png";
       this.whose_turn = "P2";
     } else {
-      td_to_change.src = "img/mars.jpg";
+      td_to_change.src = "img/mars.png";
       this.whose_turn = "P1";
     }
     var count = 0;
