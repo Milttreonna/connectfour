@@ -35,12 +35,14 @@ var game = {
     this.left_dia(column_i, lowest) || this.right_dia(column_i, lowest)) {
       if (this.whose_turn === 'P2') {
         document.getElementById('name').innerText = "Player 1 Wins!";
-        $('.bn').remove()
+        $('.bn').attr("onclick", "");
+        $('.bn').attr("src", "img/pureblack.jpg");
         return 0;
       }
       else {
         document.getElementById('name').innerText = "Player 2 Wins!";
-        $('.bn').remove()
+        $('.bn').attr("onclick", "");
+        $('.bn').attr("src", "img/pureblack.jpg");
         return 0;
       }
     }
