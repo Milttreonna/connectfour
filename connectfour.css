@@ -1,6 +1,6 @@
 @font-face{
-  font-family: inherit;
-  src: url("space age.ttf");
+  font-family: space_age;
+  src: url(space_age.ttf);
   font-weight: bold;
 }
 
@@ -8,7 +8,7 @@ body {
     background-image: url(img/space.jpg);
     background-size: 100%;
 }
-h1 {font-family: "space age";
+h1 {font-family: space_age;
     -webkit-transform:scale(1,1.5);
     color: #ad00ff;
     border-style: solid;
