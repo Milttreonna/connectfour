@@ -1,10 +1,15 @@
+@font-face{
+  font-family: inherit;
+  src: url("space age.ttf");
+  font-weight: bold;
+}
+
 body {
-    font-family: "Trebuchet MS", Helvetica, sans-serif;
     background-image: url(img/space.jpg);
     background-size: 100%;
 }
-h1 {
-  font-family: "Trebuchet MS", Helvetica, sans-serif;
+h1 {font-family: "space age";
+    -webkit-transform:scale(1,1.5);
     color: #ad00ff;
     border-style: solid;
     border-width: 7px;
