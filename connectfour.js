@@ -68,7 +68,7 @@ var game = {
   },
   hori: function (column_i, lowest) {
     x = this.columns;
-    for (var i = Math.max(column_i - 3, 0); (i + 3) < Math.min(7, column_i + 4) ; i++) {
+    for (var i = Math.max(column_i - 3, 0); (i + 3) < Math.min(7, column_i + 4); i++) {
       if ((x[i][lowest] === x[i + 1][lowest]) && (x[i][lowest] === x[i + 2][lowest])
       && (x[i][lowest] === x[i + 3][lowest])) {
         return true;
